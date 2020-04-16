@@ -33,8 +33,8 @@ namespace PersonalProjectLab
                     total = int.Parse(input);
 
                     //calculate Kill average                  
-                    decimal avg = 0.00m;
-                    avg = (decimal)(kills - errors) / total;
+                    VolleyballStats stats = new VolleyballStats();
+                    decimal avg = stats.CalculatingKillAverage(kills, errors, total);                   
 
                     //Write batting average to the console
                     Console.WriteLine("Kills average:" + avg);
@@ -55,11 +55,11 @@ namespace PersonalProjectLab
                     total_points = int.Parse(input);
 
                     //calculate passing average
-                    decimal pass = 0.00m;
-                    pass = (total_points / receiving_points);
+                    VolleyballStats stats = new VolleyballStats();
+                    decimal avg = stats.CalculatingPassingPercentage(receiving_points,total_points);
 
                     //write passing average in console
-                    Console.WriteLine("Passing percentage: " + pass);
+                    Console.WriteLine("Passing percentage: " + avg);
                 }
                 //Prompt user if they want to continue
                 //If yes return to beginning 

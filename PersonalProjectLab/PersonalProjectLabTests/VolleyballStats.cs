@@ -4,7 +4,7 @@ using PersonalProjectLab;
 namespace PersonalProjectLabTests
 {
     [TestClass]
-    public class VolleyballStats
+    public class VolleyballStatstests
     {
         [TestMethod]
         public void VolleyballStats_CalculatingKillAverage()
@@ -27,7 +27,7 @@ namespace PersonalProjectLabTests
             VolleyballStats stats = new VolleyballStats();
 
             //act
-            decimal avg = stats.CalculatingPassingAverage(20,49);
+            decimal avg = stats.CalculatingPassingPercentage(20,49);
 
             //asserting
             Assert.AreEqual(2.45m, avg);

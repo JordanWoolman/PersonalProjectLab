@@ -1,9 +1,9 @@
 ﻿using System;
 namespace PersonalProjectLab
 {
-    public class EmptyClass
+    public class VolleyballStats
     {
-        public EmptyClass()
+        public VolleyballStats()
         {
         }
         public decimal CalculatingKillAverage(int kills, int errors, int total)
@@ -21,7 +21,7 @@ namespace PersonalProjectLab
             //passing average is total points divided by recieving points
             decimal pass = 0.00m;
 
-            pass = (total_points / recieving_points);
+            pass = ((decimal)total_points / recieving_points);
             return pass;
         }
     }
